@@ -5,18 +5,19 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Bytebeat player with a collection of many formulas from around the internet">
-	<title>Bytebeat 1.1</title>
+	<title>GFLJBeat - GFLJS2100's Bytebeat composer</title>
 	<link rel="canonical" href="https://cokufaqikk.github.io/bytebeat/"/>
 	<link rel="shortcut icon" href="favicon.png">
 	<link rel="stylesheet" type="text/css" href="bytebeat.css?version=2023022000">
 	<link rel="modulepreload" href="./scripts/audioProcessor.mjs?version=2023022000">
 	<script type="module" async src="./scripts/bytebeat.mjs?version=2023022000"></script>
+	<meta name="google-site-verification" content="xWk4G31CIlzt1VxeWtAWBvHkNyj3cTBRPkn3R-LTE6Y" />
 </head>
 <body>
 	<main id="content">
 		<section id="container-fixed">
 			<div id="editor-container">
-				<textarea  id="editor-default" spellcheck="false">t*((t&4096?6:16)+(1&t>>14))>>(3&t>>8)|t>>(t&4096?3:4)</textarea>
+				<textarea  id="editor-default" spellcheck="false">t+t+t+t&t>>8|(t>>6)^t&t>>9|t>>7|t+t+t+t+t+t+t+t+(t>>9)^t>>6^t&t>>9|(t>>7)|t>>2</textarea>
 			</div>
 			<div class="controls">
 				<div class="controls-group controls-grow">
@@ -55,13 +56,24 @@
 					</button>
 				</div>
 				<select id="control-drawmode" class="control-select controls-grow" title="Drawing mode">
-					<option value="Points" selected>points</option>
-					<option value="Waveform">waveform</option>
+					<option value="Points" selected>Points</option>
+					<option value="Waveform">Waveform</option>
 				</select>
 				<select id="control-mode" class="control-select controls-grow" title="Sound mode">
-					<option value="Bytebeat" selected>bytebeat</option>
-					<option value="Signed Bytebeat">signed bytebeat</option>
-					<option value="Floatbeat">floatbeat</option>
+					<option class="song-options" value="Bytebeat" selected>Bytebeat</option>
+					<option class="song-options"  value="Signed Bytebeat">Signed Bytebeat</option>
+					<option class="song-options"  value="Floatbeat">Floatbeat</option>
+					<option class="song-options" value="Bitbeat" title="&quot;&amp;1&quot; view of code. Exotic mode.">Bitbeat</option>
+					<option class="song-options"  value="2048" title="Wraps around at 2048 instead of 256. Exotic mode.">2048</option>
+					<option class="song-options"  value="logmode" title="&quot;log2()*32&quot; view of code. Exotic mode.">Logmode</option>
+					<option class="song-options"  value="logHack" title="Logmode, but suppourts negative numbers.">LogHack</option>
+					<option class="song-options"  value="logHack2" title="LogHack, but 128 added. Multiplies by 16 instead. Especially exotic with numbers from -1 to 1.">LogHack2</option>
+					<option class="song-options"  value="sinmode" title="&quot;sin()*32&quot; view of code. Exotic mode.">Sinmode</option>
+					<option class="song-options"  value="tanmode" title="&quot;tan()*32&quot; view of code. Exotic mode.">Tanmode</option>
+					<option class="song-options"  value="cosmode" title="&quot;cos()*32&quot; view of code. Exotic mode.">Cosmode</option>
+					<option class="song-options"  value="absmode" title="&quot;abs()*32&quot; view of code. Exotic mode.">Absmode</option>
+					
+				</select>
 				</select>
 				<div class="controls-group controls-grow">
 					<input type="text" id="control-samplerate" title="Set sample rate (in Hz) then press Enter">
@@ -108,7 +120,7 @@
 				</summary>
 				<article id="info" class="library-container entry-top">
 					Bytebeat music (or one-liner music) was invented in September 2011.
-					They're generally a piece of rhythmic and somewhat melodic music with no score, no instruments, and no real oscillators.
+					They're generally a piece of rhythmic and somewhat melodic music with no score, no instruments, and no fake oscillators.
 					It's simply a single-line formula that defines a waveform as a function of time, processed (usually) 8000 times per second, resulting in an audible waveform with a 256-step resolution from silence (0) to full amplitude (256).
 					If you put that formula into a program with a loop that increments time variable (t), you can generate the headerless unsigned 8 bit mono 8kHz audio stream on output, like in this application.
 					Since these directly output a waveform, they have great performance in compiled languages and can often be ran on even the weakest embedded devices.<br>
@@ -126,6 +138,8 @@
 					<br>
 					This website is the fork of <a href="http://entropedia.co.uk/generative_music/" target="_blank">8-bit Generative Composer</a> by <a href="http://twitter.com/paul_hayes/" target="_blank">@paul_hayes</a>.<br>
 					Forked by SthephanShi aka Viraya.
+					<br>
+					Credit to CHASYXX for exotic modes.
 				</article>
 			</details>
 			<details class="library-content">
@@ -171,8 +185,10 @@
 				<div id="library-sthephanshi" class="library-container"></div>
 			</details>
 			<footer>
-				<a class="link" href="/btb/" title="Bytebeat discussion threads" target="_blank">&gt;&gt; Discussion threads</a><br>
-				<a class="link" href="https://github.com/SthephanShinkufag/bytebeat-composer" title="Github repo" target="_blank">&gt;&gt; Github</a>
+				<a class="link" href="https://dollchan.net/btb/" title="Bytebeat discussion threads" target="_blank">&gt;&gt; Discussion threads</a><br>
+				<a class="link" href="https://github.com/GFLJS2100-user/GFLJBeat" title="Github repo" target="_blank">&gt;&gt; Github</a>
+				<br>
+				<script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> GiraffeFamilyLifeJungleSimulator2100
 			</footer>
 		</section>
 	</main>
@@ -223,4 +239,4 @@
 		</svg>
 	</div>
 </body>
-</html>
+					</html>
