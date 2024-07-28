@@ -475,6 +475,16 @@ button[name="close"] {
 	border-radius: 0 var(--control-corners) var(--control-corners) 0;
 }
 
+#control-parens {
+	width: 30px;
+	border-radius: var(--control-corners) var(--control-corners) var(--control-corners) var(--control-corners);
+}
+
+#control-divisor {
+	width: 40px;
+	border-radius: var(--control-corners) var(--control-corners) var(--control-corners) var(--control-corners);
+}
+
 .control-select {
 	padding-left: 2px;
 	border: none;
