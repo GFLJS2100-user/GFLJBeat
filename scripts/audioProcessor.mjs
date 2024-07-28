@@ -1,6 +1,6 @@
 class audioProcessor extends AudioWorkletProcessor {
 	constructor(...args) {
-		super(...args)
+		super(...args);
 		this.audioSample = 0;
 		this.byteSample = 0;
 		this.errorDisplayed = true;
