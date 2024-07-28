@@ -451,8 +451,8 @@ globalThis.bytebeat = new class {
 		audioRecorder.addEventListener('dataavailable', e => this.audioRecordChunks.push(e.data));
 		audioRecorder.addEventListener('stop', e => {
 			let file, type;
-			const types = ['audio/webm', 'audio/ogg'];
-			const files = ['track.webm', 'track.ogg'];
+			const types = ['audio/mpeg', 'audio/ogg'];
+			const files = ['track.mp3', 'track.ogg'];
 			while((file = files.pop()) && !MediaRecorder.isTypeSupported(type = types.pop())) {
 				if(types.length === 0) {
 					console.error('Recording is not supported in this browser!');
