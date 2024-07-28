@@ -22,11 +22,11 @@ a, a:visited {
 }
 
 a:hover {
-	color: #ed88fb !important;
+	color: #a8c200 !important;
 }
 
 :focus-visible {
-	outline: 2px solid #614fdb;
+	outline: 2px solid #c26100;
 }
 
 .hidden {
@@ -80,7 +80,7 @@ footer {
 	flex-shrink: 0;
 	position: relative;
 	box-sizing: border-box;
-	border: 2px solid #fda757;
+	border: 2px solid #84c200;
 	overflow: hidden;
 	cursor: pointer;
 }
@@ -95,7 +95,7 @@ footer {
 	top: 0;
 	bottom: 0;
 	border-left: 2px solid blue;
-	box-shadow: 0 0 8px #6ab2ff, 0 0 16px #fff;
+	box-shadow: 0 0 8px #00bbc2, 0 0 16px #fff;
 	left: 0;
 }
 
@@ -103,12 +103,12 @@ footer {
 
 #canvas-container:hover > #canvas-play {
 	display: block;
-	background-image: linear-gradient(to bottom, #92aeec, #181f33) !important;
+	background-image: linear-gradient(to bottom, #bbc200, #c27e00) !important;
 }
 
 .canvas-initial {
 	display: block !important;
-	background-image: linear-gradient(to bottom, #67789d, #181f33);
+	background-image: linear-gradient(to bottom, #878300, #876300);
 }
 
 .canvas-pause > #svg-canvas-play, .canvas-play > #svg-canvas-pause {
@@ -213,7 +213,7 @@ button[name="close"] {
 }
 
 #error {
-	color: #f92672;
+	color: #f5db00;
 	word-break: break-all;
 }
 
@@ -332,7 +332,7 @@ button[name="close"] {
 }
 
 .library-header:hover, .library-header:focus-visible {
-	background-image: linear-gradient(to bottom, #32426c, #151b2b);
+	background-image: linear-gradient(to bottom, #cc7700, #dbc200);
 	color: #94c7ff;
 }
 
@@ -366,7 +366,7 @@ button[name="close"] {
 	padding: 0;
 	border: none;
 	border-radius: var(--control-corners);
-	background-image: linear-gradient(to bottom, #959595, #242a37);
+	background-image: linear-gradient(to bottom, #ffbb00, #8a8a01);
 	color: #e3e3e3;
 	font: bold var(--font-size)/var(--control-size) monospace;
 	cursor: pointer;
@@ -378,12 +378,12 @@ button[name="close"] {
 }
 
 .control-button:not([disabled]):hover, .control-select:hover {
-	background-image: linear-gradient(to bottom, #738cc1, #28314a);
-	color: #c2dfff;
+	background-image: linear-gradient(to bottom, #ffbb00, #8a8a01);
+	color: #fff0bf;
 }
 
 .control-button:not([disabled]):active, .control-select:active  {
-	background-image: linear-gradient(to bottom, #505f84, #1c1e26);
+	background-image: linear-gradient(to bottom, #c27e00, #bbc200);
 }
 
 .control-button > svg {
@@ -400,7 +400,7 @@ button[name="close"] {
 #control-codesize, #control-counter, #control-samplerate {
 	height: var(--control-size);
 	padding: 0 4px;
-	background: linear-gradient(to top, #3a445e, #181c26);
+	background: linear-gradient(to top, #b88100, #b8b500);
 	color: #e3e3e3;
 	border: none;
 	font: bold var(--font-size)/var(--control-size) monospace;
@@ -504,7 +504,7 @@ button[name="close"] {
 }
 
 #control-volume::-moz-range-thumb:hover {
-	background-image: linear-gradient(to bottom, #90a7d7, #3f4c71);
+	background-image: linear-gradient(to bottom, #f6ff00, #ffc400);
 }
 
 #control-volume::-webkit-slider-thumb {
@@ -518,7 +518,7 @@ button[name="close"] {
 }
 
 #control-volume::-webkit-slider-thumb:hover {
-	background-image: linear-gradient(to bottom, #90a7d7, #3f4c71);
+	background-image: linear-gradient(to bottom, #f6ff00, #ffc400);
 }
 
 .controls {
@@ -534,7 +534,7 @@ button[name="close"] {
 }
 
 .controls-group > .control-button {
-	border-left: 1px solid #5c636c;
+	border-left: 1px solid #ff9100;
 	border-radius: 0;
 }
 
